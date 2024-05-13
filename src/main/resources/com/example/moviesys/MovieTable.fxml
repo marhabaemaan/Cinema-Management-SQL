@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox prefHeight="27.0" prefWidth="1175.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviesys.MovieRowController">
+   <children>
+      <FlowPane prefHeight="27.0" prefWidth="34.0">
+         <children>
+            <Label fx:id="movieIDLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="45.0" text="ID" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="74.0">
+         <children>
+            <Label fx:id="movieNameLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="85.0" text="Name" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="83.0">
+         <children>
+            <Label fx:id="movieLanguage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="77.0" text="Language" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="91.0">
+         <children>
+            <Label fx:id="movieDuration" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="63.0" text="Duration" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="91.0">
+         <children>
+            <Label fx:id="movieYear" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="66.0" text="Year" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="95.0">
+         <children>
+            <Label fx:id="movieRatingLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="84.0" text="Rating" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="57.0">
+         <children>
+            <Label fx:id="movieCountryReleaseLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="70.0" text="Country Release" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="54.0">
+         <children>
+            <Label fx:id="moviePrice" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="68.0" text="Price $" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="57.0">
+         <children>
+            <Label fx:id="employeeIDLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="59.0" text="EMP ID" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="80.0">
+         <children>
+            <Button fx:id="statusButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#statusButtonActionIn" prefHeight="22.0" prefWidth="61.0" style="-fx-background-color: #FF0000;" text="Status">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="74.0">
+         <children>
+            <Button fx:id="deleteButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#deleteButtonActionIn" prefHeight="22.0" prefWidth="61.0" style="-fx-background-color: #FF0000;" text="Delete">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </FlowPane>
+   </children>
+</HBox>

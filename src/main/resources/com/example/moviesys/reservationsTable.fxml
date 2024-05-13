@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox prefHeight="23.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviesys.ReservationTableController">
+   <children>
+      <FlowPane prefHeight="23.0" prefWidth="44.0">
+         <children>
+            <Label fx:id="reservationID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="ID" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="23.0" prefWidth="89.0">
+         <children>
+            <Label fx:id="movieIDForRes" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="45.0" text="MovieID" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="83.0">
+         <children>
+            <Label fx:id="screenIDForRes" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="ScreenID" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="79.0">
+         <children>
+            <Label fx:id="paymentIDForRes" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="PaymentID" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="70.0">
+         <children>
+            <Label fx:id="customerIDForRes" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="CustomerID" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="95.0">
+         <children>
+            <Label fx:id="customerName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Name" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="23.0" prefWidth="161.0">
+         <children>
+            <Label fx:id="customerEmail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Email" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="23.0" prefWidth="138.0">
+         <children>
+            <Label fx:id="customerPhoneNo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="120.0" text="PhoneNo" />
+         </children>
+      </FlowPane>
+   </children>
+</HBox>

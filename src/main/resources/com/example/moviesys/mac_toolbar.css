@@ -1,0 +1,23 @@
+.window-button-close,
+.window-button-maximize,
+.window-button-minimize {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 20%;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 6pt;
+    -fx-pref-width: 0.5px;
+    -fx-pref-height: 0.5px;
+}
+
+.window-button-close {
+    -fx-background-color: #ff5f57;
+}
+
+.window-button-maximize {
+    -fx-background-color: #32d74b;
+}
+
+.window-button-minimize {
+    -fx-background-color: #ffbd2e;
+}

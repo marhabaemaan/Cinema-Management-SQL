@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviesys.BookingSceneController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: #000000;">
+         <children>
+            <ImageView fitHeight="109.0" fitWidth="238.0" layoutX="10.0">
+               <image>
+                  <Image url="@Yellowlogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="10.0" layoutY="120.0" prefHeight="55.0" prefWidth="319.0" text="Confirm Your Booking" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="movieName" layoutX="100.0" layoutY="190.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="91.0" style="-fx-background-color: Transparent; -fx-border-color: Grey;" text="Name" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="movieTimeLeft" layoutX="729.0" layoutY="190.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="411.0" style="-fx-background-color: Transparent; -fx-border-color: #FF0000;" text="TIMER" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="movieLang" layoutX="235.0" layoutY="190.0" mnemonicParsing="false" style="-fx-background-color: Transparent; -fx-border-color: Grey;" text="Lan" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="movieCountry" layoutX="465.0" layoutY="190.0" mnemonicParsing="false" style="-fx-background-color: Transparent; -fx-border-color: Grey;" text="Country" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="movieDuration" layoutX="350.0" layoutY="190.0" mnemonicParsing="false" style="-fx-background-color: Transparent; -fx-border-color: Grey;" text="Duration" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton" layoutX="910.0" layoutY="600.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backButtonActionIn" onMouseEntered="#ButtonsHoverIn" onMouseExited="#ButtonsHoverOut" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #FF0000; -fx-background-radius: 15;" text="Back" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="bookButton" layoutX="1020.0" layoutY="600.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#bookButtonActionIn" onMouseEntered="#ButtonsHoverIn" onMouseExited="#ButtonsHoverOut" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #FF0000; -fx-background-radius: 15;" text="Book" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="movieRating" layoutX="580.0" layoutY="190.0" mnemonicParsing="false" style="-fx-background-color: Transparent; -fx-border-color: Grey;" text="Rating:   U/A" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <HBox layoutX="1.0" layoutY="239.0" prefHeight="1.0" prefWidth="1300.0" style="-fx-background-color: Grey;" />
+            <Label layoutX="100.0" layoutY="270.0" text="Theatre" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="250.0" layoutY="270.0" text="Date" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="360.0" layoutY="270.0" text="ShowTime" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="475.0" layoutY="270.0" text="Screen" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="910.0" layoutY="270.0" text="Movie Price" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="590.0" layoutY="270.0" text="Seats" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="315.0" text="QATAR THEATRE" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="systemDate" layoutX="240.0" layoutY="315.0" text="Date" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="movieShowTime" layoutX="360.0" layoutY="315.0" text="ShowTime" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="screenID" layoutX="482.0" layoutY="315.0" text="Screen" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="moviePrice" layoutX="910.0" layoutY="315.0" text="Movie Price" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="seatIDs" layoutX="590.0" layoutY="315.0" prefHeight="20.0" prefWidth="42.0" text="Seats" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <VBox layoutX="223.0" layoutY="250.0" prefHeight="104.0" prefWidth="2.0" style="-fx-background-color: Grey;" />
+            <VBox layoutX="330.0" layoutY="250.0" prefHeight="104.0" prefWidth="2.0" style="-fx-background-color: Grey;" />
+            <VBox layoutX="450.0" layoutY="250.0" prefHeight="104.0" prefWidth="2.0" style="-fx-background-color: Grey;" />
+            <VBox layoutX="550.0" layoutY="250.0" prefHeight="104.0" prefWidth="2.0" style="-fx-background-color: Grey;" />
+            <VBox layoutX="680.0" layoutY="250.0" prefHeight="104.0" prefWidth="2.0" style="-fx-background-color: Grey;" />
+            <HBox layoutX="1.0" layoutY="370.0" prefHeight="1.0" prefWidth="1300.0" style="-fx-background-color: Grey;" />
+            <ImageView fitHeight="83.0" fitWidth="81.0" layoutX="8.0" layoutY="258.0">
+               <image>
+                  <Image url="@theatre.png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="1.0" layoutY="480.0" prefHeight="1.0" prefWidth="1300.0" style="-fx-background-color: Grey;" />
+            <Label fx:id="seatInfo" layoutX="100.0" layoutY="400.0" prefHeight="16.0" prefWidth="96.0" text="Booked Seats" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="910.0" layoutY="399.0" text="Total Price" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="seatInfo1" layoutX="140.0" layoutY="425.0" text="x SILVER" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="seatInfo11" layoutX="140.0" layoutY="450.0" text="x GOLD" textFill="#cecece">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="countSilver" layoutX="100.0" layoutY="425.0" text="0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="countGold" layoutX="100.0" layoutY="450.0" text="0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalPrice" layoutX="910.0" layoutY="450.0" text="Total Price" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailField" layoutX="100.0" layoutY="520.0" prefHeight="25.0" prefWidth="165.0" promptText="Enter Customer Email" style="-fx-background-color: Transparent; -fx-text-fill: White; -fx-border-color: Grey;" />
+            <TextField fx:id="nameField" layoutX="100.0" layoutY="560.0" prefHeight="25.0" prefWidth="165.0" promptText="Enter Customer Name" style="-fx-background-color: Transparent; -fx-text-fill: White; -fx-border-color: Grey;" />
+            <TextField fx:id="phoneField" layoutX="100.0" layoutY="600.0" prefHeight="25.0" prefWidth="165.0" promptText="Enter  Phone No" style="-fx-background-color: Transparent; -fx-text-fill: White; -fx-border-color: Grey;" />
+            <Button fx:id="registerButton" layoutX="290.0" layoutY="600.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#registerButtonActionIn" onMouseEntered="#ButtonsHoverIn" onMouseExited="#ButtonsHoverOut" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #FF0000; -fx-background-radius: 15;" text="Register" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="finalLabel" layoutX="545.0" layoutY="559.0" text="Final Message" textFill="RED" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

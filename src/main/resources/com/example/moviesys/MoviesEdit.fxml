@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviesys.MoviesViewController">
+    <children>
+          <Label fx:id="manageMoviesLabel" layoutX="27.0" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0" prefWidth="179.0" text="Manage Movies" textFill="WHITE">
+              <font>
+                  <Font name="Times New Roman" size="26.0" />
+              </font>
+          </Label>
+          <Button fx:id="addMovieButton" layoutX="200.0" layoutY="517.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addButtonMoviesActionIn" onMouseEntered="#ButtonsHoverIn" onMouseExited="#ButtonsHoverOut" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #ff0000; -fx-background-radius: 15;" text="Add Movie" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <FlowPane layoutX="330.0" layoutY="121.0" prefHeight="21.0" prefWidth="33.0">
+         <children>
+            <Label fx:id="movieIDLabel1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="ID" textFill="WHITE" />
+         </children>
+      </FlowPane>
+      <FlowPane layoutX="363.3333435058594" layoutY="121.0" prefHeight="27.0" prefWidth="78.0">
+         <children>
+            <Label fx:id="movieNameLabel1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Name" textFill="WHITE" />
+         </children>
+      </FlowPane>
+      <FlowPane layoutX="441.3333435058594" layoutY="121.0" prefHeight="27.0" prefWidth="83.0">
+         <children>
+            <Label fx:id="movieLanguage1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Language" textFill="WHITE" />
+         </children>
+      </FlowPane>
+      <FlowPane layoutX="524.6666870117188" layoutY="121.0" prefHeight="27.0" prefWidth="79.0">
+         <children>
+            <Label fx:id="movieDuration1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Duration" textFill="WHITE" />
+         </children>
+      </FlowPane>
+      <FlowPane layoutX="589.0" layoutY="121.0" prefHeight="27.0" prefWidth="70.0">
+         <children>
+            <Label fx:id="movieYear1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Year" textFill="WHITE" />
+         </children>
+      </FlowPane>
+      <FlowPane layoutX="640.0" layoutY="121.0" prefHeight="27.0" prefWidth="105.0">
+         <children>
+            <Label fx:id="movieRatingLabel1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Rating" textFill="WHITE" />
+         </children>
+      </FlowPane>
+      <FlowPane layoutX="701.0" layoutY="121.0" prefHeight="27.0" prefWidth="140.0">
+         <children>
+            <Label fx:id="movieCountryReleaseLabel1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Country Release" textFill="WHITE" />
+         </children>
+      </FlowPane>
+      <FlowPane layoutX="805.0" layoutY="121.0" prefHeight="21.0" prefWidth="118.0">
+         <children>
+            <Label fx:id="moviePrice1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Price $" textFill="WHITE" />
+         </children>
+      </FlowPane>
+      <FlowPane layoutX="878.0" layoutY="121.0" prefHeight="21.0" prefWidth="61.0">
+         <children>
+            <Label fx:id="employeeIDLabel1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="59.0" text="EMP ID" textFill="WHITE" />
+         </children>
+      </FlowPane>
+      <FlowPane layoutX="948.0" layoutY="121.0" prefHeight="21.0" prefWidth="61.0">
+         <children>
+            <Label fx:id="statusButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="56.0" text="Status" textFill="WHITE" />
+         </children>
+      </FlowPane>
+      <FlowPane layoutX="1004.0" layoutY="121.0" prefHeight="21.0" prefWidth="61.0">
+         <children>
+            <Label fx:id="editLabel1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="93.0" text="Action" textFill="WHITE" />
+         </children>
+      </FlowPane>
+      <ScrollPane layoutX="316.0" layoutY="149.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="771.0" style="-fx-background-color: Green;">
+         <content>
+            <VBox fx:id="entry" prefHeight="334.0" prefWidth="689.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="backButton" layoutX="90.0" layoutY="517.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backButtonMoviesAddActionIn" onMouseEntered="#ButtonsHoverIn" onMouseExited="#ButtonsHoverOut" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #ff0000; -fx-background-radius: 15;" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="searchMovieField" layoutX="96.0" layoutY="208.0" promptText="Type Movie ID to search" />
+      <Button fx:id="searchMovieButton" layoutX="122.0" layoutY="259.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#searchMovieButtonActionIn" onMouseEntered="#ButtonsHoverIn" onMouseExited="#ButtonsHoverOut" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #ff0000; -fx-background-radius: 15;" text="Search" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+</AnchorPane>

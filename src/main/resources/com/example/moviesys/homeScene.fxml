@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1300.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviesys.HomeSceneController">
+   <children>
+      <ScrollBar layoutX="1270.0" orientation="VERTICAL" prefHeight="1016.0" prefWidth="50.0" AnchorPane.leftAnchor="1260.0" AnchorPane.rightAnchor="-10.0" AnchorPane.topAnchor="-10.0" />
+      <VBox layoutX="478.0" layoutY="17.0" prefHeight="238.0" prefWidth="781.0" style="-fx-border-color: Gray; -fx-border-style: solid; -fx-border-width: 5;">
+         <children>
+            <ImageView fx:id="slideImageView" fitHeight="228.0" fitWidth="772.0" onMouseEntered="#onImageViewMouseIn" onMouseExited="#onImageViewMouseOut">
+               <image>
+                  <Image url="@peaky.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox layoutX="488.0" layoutY="117.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="43.0">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="64.0">
+               <image>
+                  <Image url="@leftarrow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox layoutX="1190.0" layoutY="117.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="43.0">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="64.0">
+               <image>
+                  <Image url="@rightarrow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <ImageView fitHeight="135.0" fitWidth="359.0" layoutX="16.0" layoutY="3.0">
+         <image>
+            <Image url="@Yellowlogo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" layoutX="41.0" layoutY="148.0" prefHeight="23.0" prefWidth="113.0" text="USER" textFill="WHITE" />
+      <Label fx:id="designation" layoutX="41.0" layoutY="176.0" text="Designation:" textFill="WHITE" />
+      <Label layoutX="41.0" layoutY="193.0" text="Access ID :" textFill="WHITE" />
+      <Label fx:id="acessid" layoutX="101.0" layoutY="193.0" text="ID" textFill="WHITE" />
+      <Button fx:id="logoutButton" layoutX="41.0" layoutY="218.0" mnemonicParsing="false" onAction="#onLogoutButtonActionIn" onMouseEntered="#ButtonsHoverIn" onMouseExited="#ButtonsHoverOut" style="-fx-background-color: #FF0000;" text="LOGOUT" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <VBox layoutX="61.0" layoutY="341.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ImageView fx:id="movieImage1" fitHeight="205.0" fitWidth="255.0" onMouseClicked="#MovieImage1ActionIn" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+         </children>
+      </VBox>
+      <VBox layoutX="310.0" layoutY="341.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="205.0" prefWidth="255.0">
+         <children>
+            <ImageView fx:id="movieImage2" fitHeight="210.0" fitWidth="257.0" onMouseClicked="#MovieImage2ActionIn" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+         </children>
+      </VBox>
+      <Label fx:id="movieName1" layoutX="83.0" layoutY="560.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="128.0" text="MovieName" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ratingImage1" fitHeight="18.0" fitWidth="120.0" layoutX="65.0" layoutY="595.0">
+         <image>
+            <Image url="@4star.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="movieName2" layoutX="355.0" layoutY="560.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="128.0" text="MovieName" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ratingImage2" fitHeight="18.0" fitWidth="120.0" layoutX="320.0" layoutY="595.0">
+         <image>
+            <Image url="@3star.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="rd1" layoutX="800.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onRd1action" prefHeight="13.0" prefWidth="13.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="slides" />
+         </toggleGroup>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <RadioButton fx:id="rd2" layoutX="825.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onRd2action" prefHeight="13.0" prefWidth="13.0" toggleGroup="$slides">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="rd3" layoutX="850.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onRd3action" prefHeight="13.0" prefWidth="13.0" toggleGroup="$slides">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="rd4" layoutX="875.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onRd4action" prefHeight="13.0" prefWidth="13.0" toggleGroup="$slides">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="rd5" layoutX="900.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onRd5action" prefHeight="13.0" prefWidth="13.0" toggleGroup="$slides">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <VBox layoutX="560.0" layoutY="341.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="205.0" prefWidth="255.0">
+         <children>
+            <ImageView fx:id="movieImage3" fitHeight="210.0" fitWidth="257.0" onMouseClicked="#MovieImage3ActionIn" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+         </children>
+      </VBox>
+      <Label fx:id="movieName3" layoutX="582.0" layoutY="560.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="128.0" text="MovieName" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ratingImage3" fitHeight="18.0" fitWidth="120.0" layoutX="565.0" layoutY="595.0">
+         <image>
+            <Image url="@3star.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="790.0" layoutY="341.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="205.0" prefWidth="255.0">
+         <children>
+            <ImageView fx:id="movieImage4" fitHeight="210.0" fitWidth="257.0" onMouseClicked="#MovieImage4ActionIn" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+         </children>
+      </VBox>
+      <Label fx:id="movieName4" layoutX="814.0" layoutY="560.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="128.0" text="MovieName" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ratingImage4" fitHeight="18.0" fitWidth="120.0" layoutX="795.0" layoutY="595.0">
+         <image>
+            <Image url="@3star.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="1031.0" layoutY="341.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="205.0" prefWidth="255.0">
+         <children>
+            <ImageView fx:id="movieImage5" fitHeight="210.0" fitWidth="257.0" onMouseClicked="#MovieImage5ActionIn" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+         </children>
+      </VBox>
+      <Label fx:id="movieName5" layoutX="1077.0" layoutY="560.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="128.0" text="MovieName" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ratingImage5" fitHeight="18.0" fitWidth="120.0" layoutX="1040.0" layoutY="595.0">
+         <image>
+            <Image url="@3star.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="managerButton1" layoutX="120.0" layoutY="218.0" mnemonicParsing="false" onAction="#managerButtonActionIn" onMouseEntered="#ButtonsHoverIn" onMouseExited="#ButtonsHoverOut" style="-fx-background-color: #FF0000;" text="MANAGER CONTROLS" textFill="WHITE" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviesys.SeatSceneController">
+    <children>
+      <ImageView fitHeight="120.0" fitWidth="544.0" layoutX="358.0" layoutY="35.0">
+         <image>
+            <Image url="@Screen.jpeg" />
+         </image>
+      </ImageView>
+        <Button fx:id="seatBackButton" layoutX="910.0" layoutY="610.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#seatBackButtonActionIn" onMouseEntered="#ButtonsHoverIn" onMouseExited="#ButtonsHoverOut" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #FF0000; -fx-background-radius: 15;" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatNextButton" layoutX="1010.0" layoutY="610.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#seatNextButtonActionIn" onMouseEntered="#ButtonsHoverIn" onMouseExited="#ButtonsHoverOut" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #FF0000; -fx-background-radius: 15;" text="Next" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton1" layoutX="180.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="01">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton2" layoutX="215.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="02">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton3" layoutX="250.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="03">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton4" layoutX="285.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="04">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton5" layoutX="320.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="05">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton6" layoutX="455.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="06">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton7" layoutX="490.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="07">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton8" layoutX="525.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="08">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton9" layoutX="560.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="09">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton10" layoutX="595.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="10">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton11" layoutX="630.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="11">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton12" layoutX="665.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="12">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton13" layoutX="700.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="13">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton14" layoutX="735.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="14">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton15" layoutX="770.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="15">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton16" layoutX="900.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="16">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton17" layoutX="935.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="17">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton18" layoutX="970.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="18">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton19" layoutX="1005.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="19">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button fx:id="seatButton20" layoutX="1040.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="20">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton21" layoutX="180.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="21">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton22" layoutX="215.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="22">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton23" layoutX="250.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="23">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton24" layoutX="285.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="24">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton25" layoutX="320.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="25">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton26" layoutX="455.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="26">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton27" layoutX="490.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="27">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton28" layoutX="525.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="28">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton29" layoutX="560.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="29">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton30" layoutX="595.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="30">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton31" layoutX="630.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="31">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton32" layoutX="665.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="32">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton33" layoutX="700.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="33">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton34" layoutX="735.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="34">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton35" layoutX="770.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="35">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton36" layoutX="900.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="36">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton37" layoutX="935.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="37">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton38" layoutX="970.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="38">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton39" layoutX="1005.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="39">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton40" layoutX="1040.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="40">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton41" layoutX="180.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="41">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton42" layoutX="215.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="42">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton43" layoutX="250.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="43">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton44" layoutX="285.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="44">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton45" layoutX="320.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="45">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton46" layoutX="455.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="46">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton47" layoutX="490.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="47">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton48" layoutX="525.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="48">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton49" layoutX="560.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="49">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton50" layoutX="595.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="50">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton51" layoutX="630.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="51">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton52" layoutX="665.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="52">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton53" layoutX="700.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="53">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton54" layoutX="735.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="54">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton55" layoutX="770.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="55">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton56" layoutX="900.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="56">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton57" layoutX="935.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="57">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton58" layoutX="970.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="58">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton59" layoutX="1005.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="59">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton60" layoutX="1040.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSilverButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: lightgrey;" text="60">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton62" layoutX="285.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="62">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton63" layoutX="320.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="63">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton64" layoutX="455.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="64">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton65" layoutX="490.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="65">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton66" layoutX="525.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="66">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton67" layoutX="560.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="67">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton68" layoutX="595.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="68">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton69" layoutX="630.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="69">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton70" layoutX="665.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="70">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton71" layoutX="700.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="71">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton72" layoutX="735.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="72">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton73" layoutX="770.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="73">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton74" layoutX="900.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="74">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton75" layoutX="935.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="75">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton61" layoutX="250.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="61">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton76" layoutX="970.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="76">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton78" layoutX="285.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="78">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton79" layoutX="320.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="79">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton80" layoutX="455.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="80">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton81" layoutX="490.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="81">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton82" layoutX="525.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="82">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton83" layoutX="560.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="83">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton84" layoutX="595.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="84">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton85" layoutX="630.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="85">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton86" layoutX="665.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="86">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton87" layoutX="700.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="87">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton88" layoutX="735.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="88">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton89" layoutX="770.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="89">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton90" layoutX="900.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="90">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton91" layoutX="935.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="91">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton77" layoutX="250.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="77">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="seatButton92" layoutX="970.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleGoldButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: gold;" text="92">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+    </children>
+</AnchorPane>

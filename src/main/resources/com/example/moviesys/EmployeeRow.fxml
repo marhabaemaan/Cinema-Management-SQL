@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviesys.EmployeeRowController">
+   <children>
+      <FlowPane prefHeight="27.0" prefWidth="54.0">
+         <children>
+            <Label fx:id="employeeIDLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="ID" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="78.0">
+         <children>
+            <Label fx:id="employeeFNameLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="First Name" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="67.0">
+         <children>
+            <Label fx:id="employeeLNameLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Last Name" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="109.0">
+         <children>
+            <Label fx:id="employeeAddressLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Adrress" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="73.0">
+         <children>
+            <Label fx:id="employeeDOBLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="83.0" text="DOB" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="87.0">
+         <children>
+            <Label fx:id="employeeUsernameLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Username" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="27.0" prefWidth="82.0">
+         <children>
+            <Label fx:id="employeePasswordLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="65.0" text="Password" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="21.0" prefWidth="61.0">
+         <children>
+            <Label fx:id="employeeDesigLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="68.0" text="Designation" />
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="21.0" prefWidth="61.0">
+         <children>
+            <Label fx:id="employeeAccessIDLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="56.0" text="Access ID" />
+         </children>
+      </FlowPane>
+   </children>
+</HBox>
