@@ -1,2 +1,5 @@
-# Cinema-Management-SQL
-The Cinema Management Database system is a software solution designed for cinemas to manage the booking process of movies. The system enables staff to book movies for their customers and provides cinema staff with an interface to manage bookings, seating arrangements, and payment processing.
+# Cinema Management System
+
+Cinema Management System is a robust Java-based software designed for efficient movie booking and management in cinemas. With its Microsoft SQL Server backend, it ensures secure and scalable data storage. Powered by JavaFX, its frontend offers an intuitive interface for both staff and customers. Staff can seamlessly handle bookings, seating arrangements, and payments, streamlining operations. Customers enjoy a user-friendly experience, selecting movies based on ratings, visualizing seat availability, and booking tickets hassle-free. The admin interface empowers management with comprehensive control, facilitating movie management, employee administration, and seamless updates. Elevate your cinema experience with Cinema Management System – the ultimate solution for modern movie theaters.
+
+
